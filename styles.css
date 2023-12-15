@@ -1,0 +1,85 @@
+
+
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    height: 100vh;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#About {
+    flex:1;
+    background-color: #f0f0f0; /* Adjust as needed */
+    color:000;
+    
+}
+#About::-webkit-scrollbar {
+    width: 20px; /* Adjust the width as needed */
+    color:000;
+}
+#WORKS::-webkit-scrollbar {
+    width: 20px; /* Adjust the width as needed */
+}
+#Works {
+    flex:2;
+    background-color: #f0f0f0; /* Adjust as needed */
+    color:000;
+}
+img[alt="1"]{
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    border-radius: 50%; /* Creates a circular shape */
+    object-fit: cover
+}
+img[alt="2"]{
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    border-radius: 50%; /* Creates a circular shape */
+    object-fit: cover
+}
+#written-content {
+    background-color: #f0f0f0; /* Adjust as needed */
+    color:000;
+    font-size: 30px;
+   
+
+}
+.information{
+    display: flex;
+}
+#heading{
+    font-size: small;
+    border-right: 50px solid #f0f0f0;
+
+}
+#desc{
+    font-size: 20px;
+}
+
+.Project {
+    
+    margin-bottom: 60px; 
+    display: flex;
+    flex-direction: column;
+}
+
+#Type {
+    font-size: 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-color: #000;
+    border-width: 5px;
+}
+
+#Name {
+    font-size: 40px;
+    
+
+}
+
+
