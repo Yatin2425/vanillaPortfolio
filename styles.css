@@ -1,85 +1,107 @@
-
-
-.container {
-    display: flex;
+html, body{
+    border:  solid #000;
+    margin:0 ;
+    border-right: .15vw solid #000;
+    -webkit-text-size-adjust: 100%;
+}
+.svg {
+    position: absolute;
+    top: 5%;
+    right: 0; /* Attach to the right side of the container */
+    z-index: 1000;
 }
 
-.column {
-    flex: 1;
+
+
+.cointainer{
+    background-color: #000;
+    
+}
+
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+/*This is the styles for about section*/
+
+/*Styles for me section and scrollbar*/
+#me{
     height: 100vh;
     overflow-y: scroll;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-#About {
-    flex:1;
-    background-color: #f0f0f0; /* Adjust as needed */
-    color:000;
+    position: relative;
     
 }
-#About::-webkit-scrollbar {
-    width: 20px; /* Adjust the width as needed */
-    color:000;
+.me::-webkit-scrollbar {
+    width: 20px;
+    background-color: #000000;
+
+    margin-block: 10em;
+    
 }
-#WORKS::-webkit-scrollbar {
-    width: 20px; /* Adjust the width as needed */
+.me::-webkit-scrollbar-track {
+    background-color: white;
+    width: 6px;
+    border: 0.25em solid;
+    
+    
+    
+
+    
+
 }
-#Works {
-    flex:2;
-    background-color: #f0f0f0; /* Adjust as needed */
-    color:000;
+.me::-webkit-scrollbar-thumb {
+    background-color: #000000;
+
 }
-img[alt="1"]{
-    width: 20px; /* Adjust the width as needed */
-    height: 20px; /* Adjust the height as needed */
-    border-radius: 50%; /* Creates a circular shape */
-    object-fit: cover
+
+.about-me{
+    font-size: 1.8vw;
+    line-height: 2.05vw;
+    padding-left: 1vw;
+    padding-right: 3vw
 }
-img[alt="2"]{
-    width: 20px; /* Adjust the width as needed */
-    height: 20px; /* Adjust the height as needed */
-    border-radius: 50%; /* Creates a circular shape */
-    object-fit: cover
+p{
+    color: var(--black-2);
+    font-family: Gt america, sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
-#written-content {
-    background-color: #f0f0f0; /* Adjust as needed */
-    color:000;
-    font-size: 30px;
+h3{
+    
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 14%;
+    font-family: Gt america, sans-serif;
+    font-size: 1.3vw;
+    font-weight: 700;
+    line-height: 1.5vw;
+    
+}
+/*This is the styles for project section*/
+
+#project-section{
+    height: 100vh;
+    overflow-y: scroll;
+    padding-left: 2vw;
+}
+.project-section::-webkit-scrollbar {
+    width: 20px;
+    background-color: #000000;
+
+}
+.project-section::-webkit-scrollbar-track {
+    background-color: white;
+    width: 6px;
+    border: 0.25em solid;
    
 
-}
-.information{
-    display: flex;
-}
-#heading{
-    font-size: small;
-    border-right: 50px solid #f0f0f0;
-
-}
-#desc{
-    font-size: 20px;
-}
-
-.Project {
-    
-    margin-bottom: 60px; 
-    display: flex;
-    flex-direction: column;
-}
-
-#Type {
-    font-size: 20px;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    border-color: #000;
-    border-width: 5px;
-}
-
-#Name {
-    font-size: 40px;
     
 
 }
+.project-section::-webkit-scrollbar-thumb {
+    background-color: #000000;
 
+}
 
