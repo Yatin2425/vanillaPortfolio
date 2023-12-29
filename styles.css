@@ -4,12 +4,13 @@ html, body{
     border-right: .15vw solid #000;
     -webkit-text-size-adjust: 100%;
 }
-.svg {
-    position: absolute;
-    top: 5%;
-    right: 0; /* Attach to the right side of the container */
-    z-index: 1000;
-}
+.my-svg {
+    width: 15vw;
+    position: fixed;
+    top: -1vh;
+    left: 25vw;
+
+  }
 
 
 
@@ -104,4 +105,3 @@ h3{
     background-color: #000000;
 
 }
-
