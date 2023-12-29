@@ -14,10 +14,7 @@ html, body{
 
 
 
-.cointainer{
-    background-color: #000;
-    
-}
+
 
 
 .content{
@@ -31,7 +28,8 @@ html, body{
     height: 100vh;
     overflow-y: scroll;
     position: relative;
-    
+    padding-top:25px;
+    padding-left: 2vw;
 }
 .me::-webkit-scrollbar {
     width: 20px;
@@ -59,7 +57,7 @@ html, body{
 .about-me{
     font-size: 1.8vw;
     line-height: 2.05vw;
-    padding-left: 1vw;
+  
     padding-right: 3vw
 }
 p{
@@ -68,8 +66,7 @@ p{
     margin-top: 0;
     margin-bottom: 10px;
 }
-h3{
-    
+h3 {
     color: #000;
     text-transform: uppercase;
     margin-top: 0;
@@ -78,14 +75,31 @@ h3{
     font-size: 1.3vw;
     font-weight: 700;
     line-height: 1.5vw;
-    
 }
+
+/* These are styles for certificatiosn*/
+.certifications h3{
+    padding-top: 10vh;
+    padding-right:10vw;
+    font-size: large;
+    margin-bottom: 2.5 vh;
+}
+.certifications p
+{
+    padding-top: 0%;
+    max-width: 400px;
+
+    font-size: 1.2vw;
+  
+}
+
 /*This is the styles for project section*/
 
 #project-section{
     height: 100vh;
     overflow-y: scroll;
     padding-left: 2vw;
+    padding-top: 25px;
 }
 .project-section::-webkit-scrollbar {
     width: 20px;
@@ -104,4 +118,7 @@ h3{
 .project-section::-webkit-scrollbar-thumb {
     background-color: #000000;
 
+}
+img[alt="link"]{
+    width:1.2vw;
 }
