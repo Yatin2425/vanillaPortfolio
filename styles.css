@@ -3,82 +3,87 @@
     src: url("assets/mixal/mixal-fontfamily/Mixal-ExtraBold.otf") format('otf');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-html, body{
+html,
+body {
     font-family: 'Mixal-ExtraBold';
-    border:  solid #000;
-    margin:0 ;
+    border: solid #000;
+    margin: 0;
     border-right: .15vw solid #000;
     -webkit-text-size-adjust: 100%;
     overflow: hidden;
+    display: flex;
+    
 }
+
 .my-svg {
     width: 15vw;
     position: fixed;
     top: -1vh;
     left: 25vw;
 
-  }
+}
 
-
-
-
-
-
-.content{
+.content {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
+
 /*This is the styles for about section*/
 
 /*Styles for me section and scrollbar*/
-#me{
+#me {
     height: 100vh;
     overflow-y: scroll;
     position: relative;
-    padding-top:25px;
+    padding-top: 25px;
     padding-left: 2vw;
 }
+
 .me::-webkit-scrollbar {
     width: 20px;
     background-color: #000000;
 
     margin-block: 10em;
-    
+
 }
+
 .me::-webkit-scrollbar-track {
     background-color: white;
     width: 6px;
     border: 0.25em solid;
-    
-    
-    
 
-    
+
+
+
+
 
 }
+
 .me::-webkit-scrollbar-thumb {
     background-color: #000000;
 
 }
 
-.about-me{
+.about-me {
     font-size: 1.8vw;
     line-height: 2.05vw;
-  
+
     padding-right: 3vw;
     font-family: 'Mixal-ExtraBold';
 }
-p{
+
+p {
     color: var(--black-2);
     font-family: Gt america, sans-serif;
     margin-top: 0;
     margin-bottom: 10px;
     font-family: 'Mixal-ExtraBold';
 }
+
 h3 {
-    
+
     color: #000;
     text-transform: uppercase;
     margin-top: 0;
@@ -91,30 +96,32 @@ h3 {
 }
 
 /* These are styles for certificatiosn*/
-.certifications h3{
+.certifications h3 {
     padding-top: 10vh;
-    padding-right:10vw;
+    padding-right: 10vw;
     font-size: large;
     margin-bottom: 3 vh;
     font-family: 'Mixal-ExtraBold';
 }
-.certifications p
-{
+
+.certifications p {
     padding-top: 0%;
     max-width: 400px;
 
     font-size: 1.2vw;
     font-family: 'Mixal-ExtraBold';
-  
+
 }
-.techskills{
+
+.techskills {
     padding-top: 10vh;
-    padding-right:10vw;
+    padding-right: 10vw;
     font-size: large;
     margin-bottom: 2.5 vh;
     font-family: 'Mixal-ExtraBold';
 }
-.techlist{
+
+.techlist {
     display: flex;
     flex-flow: wrap;
     padding-top: 0%;
@@ -124,13 +131,16 @@ h3 {
 
 
 }
-.techskills h3{
+
+.techskills h3 {
     margin-bottom: 3vh;
 }
-.SoftSkills h3{
+
+.SoftSkills h3 {
     margin-bottom: 3vh;
 }
-.SoftSkills{
+
+.SoftSkills {
     padding-top: 10vh;
 
     font-size: large;
@@ -138,7 +148,7 @@ h3 {
 
 }
 
-.softlist{
+.softlist {
     display: flex;
     flex-flow: wrap;
     padding-top: 0%;
@@ -150,30 +160,115 @@ h3 {
 
 /*This is the styles for project section*/
 
-#project-section{
+#project-section {
     height: 100vh;
     overflow-y: scroll;
     padding-left: 2vw;
     padding-top: 25px;
 }
+
 .project-section::-webkit-scrollbar {
     width: 20px;
     background-color: #000000;
 
 }
+
 .project-section::-webkit-scrollbar-track {
     background-color: white;
     width: 6px;
     border: 0.25em solid;
-   
 
-    
+
+
 
 }
+
 .project-section::-webkit-scrollbar-thumb {
     background-color: #000000;
 
 }
-img[alt="link"]{
-    width:1.2vw;
+#AppView {
+    display: none;
+
+}
+
+img[alt="link"] {
+    width: 1.2vw;
+}
+
+@media (max-width: 768px) {
+    
+    body{
+        background-color: black;
+        font-family: 'Mixal-ExtraBold';
+        overflow: none;
+        
+
+    }
+    main {
+        display :grid ; 
+
+    }
+    .svg {
+        display: none;
+    }
+    .cointainer {
+        display : none;
+    }
+    #AppView {
+        display: grid;
+        background-color: white;
+        width : 100vw;
+        height : 100vh;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    h3{
+        padding-top: 5vh;
+        font-size : 5vw;
+        padding-bottom: 2vh;
+        margin-bottom: 2vh;
+    }
+    p{
+        width: auto;
+        color: #000;
+        font-family: Gt america, sans-serif;
+        font-size: 5.5vw;
+        padding: 1vh
+        
+    }
+
+
+    .AppVIew::-webkit-scrollbar {
+        width: 20px;
+        background-color: #000000;
+    
+    }
+    .AppView::-webkit-scrollbar-track {
+        background-color: white;
+        width: 6px;
+        border: 0.25em solid;
+    
+    
+    
+    
+    }
+    .imageGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    .mobile-image{
+        width: 95vw;
+        padding-left: 2vw;
+        padding-right: 10%;
+        padding-bottom: 1vh;
+
+    }
+
+    
+
+
+    
 }
